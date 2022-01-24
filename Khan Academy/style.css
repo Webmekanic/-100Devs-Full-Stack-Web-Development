@@ -1,0 +1,42 @@
+header {
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  /* border: 2px solid red; */
+}
+.list {
+  /* border: 2px solid black; */
+  display: flex;
+  gap: 2rem;
+}
+.listItem {
+  list-style: none;
+}
+.home {
+  /* border: 2px solid blue; */
+  display: flex;
+}
+div {
+  /* border: 2px solid red; */
+}
+.khanGroups {
+  display: flex;
+  gap: 1rem;
+}
+.khanGroupsItem {
+  list-style: none;
+  background: #1865f2;
+  color: white;
+}
+.KhanAbout {
+  /* border: 2px solid red; */
+  text-align: center;
+  background-color: rgb(247, 245, 244);
+  padding: 5rem;
+}
