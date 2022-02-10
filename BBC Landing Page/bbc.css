@@ -3,29 +3,120 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  height: 100%;
-  /* width: 100vw; */
-}
 
 header {
-  /* border: 2px solid red;
-  display: flex;
-  flex-direction: row; */
+  height: 60px;
+  /* border: 2px solid red; */
+  background-color: black;
+  color: white;
+  padding: 10px;
 }
-nav {
-  border: 3px solid yellow;
-  /* float: left; */
+nav * {
+  /* border: 3px solid yellow; */
+  float: left;
+  width: 10%;
+  color: white;
+  display: block;
 }
-.navList {
-  border: 2px solid orange;
-  /* display: flex; */
-  /* flex-direction: row; */
+nav img {
+  /* border: 2px solid red; */
+  width: 100px;
+  /* height: 100px; */
 }
+nav ul {
+  /* border: 3px solid yellow; */
+  width: 60%;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+nav form input {
+  /* border: 2px solid red; */
+  width: 180%;
+  padding: 6px;
+  margin-top: 5px;
+}
+/* .fa-search {
+  float: right;
+} */
+
 #home {
-  border: 2px solid green;
+  /* border: 2px solid green; */
+}
+
+.homeDisplay {
+  /* border: 2px solid red; */
+  height: 70vh;
+}
+.homeDisplayCard {
+  /* border: 2px solid yellow; */
+  width: 50%;
+  position: relative;
+  float: left;
+}
+.homeDisplayCard img {
+  width: 100%;
+}
+
+.homeHeader {
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 300px;
+}
+.homeDisplayCard2 {
+  /* border: 2px solid purple; */
+  width: 50%;
+  float: right;
+}
+.homeDisplay1 {
+  border: 2px solid orange;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+#homeDisplayText {
+  border: 2px solid red;
+  position: absolute;
+  top: 100px;
+}
+#homeDisplayText2 {
+  border: 2px solid red;
+  position: absolute;
+  top: 190px;
+}
+.homeDisplay1 img {
+  width: 100%;
+}
+
+.vaccine {
+  /* border: 2px solid green; */
+  width: 50%;
+  float: right;
+}
+.vaccine img {
+  width: 100%;
+}
+.homefloatcard2 {
+  clear: both;
+}
+#workLife {
+  /* border: 2px solid orange; */
+  width: 50%;
+  float: left;
+}
+
+#workLife img {
+  width: 100%;
+}
+.culture {
+  width: 50%;
+  float: right;
+}
+.culture img {
+  width: 100%;
 }
 
 #news {
-  border: 3px solid purple;
+  /* border: 3px solid purple; */
 }

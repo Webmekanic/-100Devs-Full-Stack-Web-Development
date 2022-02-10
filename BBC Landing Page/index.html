@@ -16,9 +16,7 @@
   <body>
     <header>
       <nav>
-        <a href="http://#home"
-          ><img src="./images/bbc logo.jpg" width="100px" alt="BBC"
-        /></a>
+        <img src="./images/bbc-logo-black-and-white.png" alt="BBC" />
         <ul class="navList">
           <li class="navList">
             <span><i class="fas fa-user"></i></span>Sign In
@@ -33,50 +31,64 @@
           <li class="navListItem">Culture</li>
           <li class="navListItem">
             More
-            <span><i class="fas fa-sort-down"></i></span>
+            <!-- <span><i class="fas fa-sort-down"></i></span> -->
           </li>
         </ul>
-        <input type="text" placeholder="Search" />
-        <i class="fas fa-search"></i>
+        <form action="">
+          <input type="text" placeholder="Search" />
+          <!-- <i class="fas fa-search"></i> -->
+        </form>
       </nav>
     </header>
 
-    <!-- <section id="home">
+    <section id="home">
       <h2>Welcome to BBC.com <span>Thursday, 13 August</span></h2>
       <div class="homeDisplay">
-        <article>
+        <article class="homeDisplayCard">
           <img src="./images/Isreal & UAE.jpg" alt="Isreal and UAE" srcset="" />
-          <h1>Isreal and UAE strike historic peace deal</h1>
-          <p>
-            Isreal and the UAE agree to normalize relations, marking the third
-            isreal Arab peace deal.
-          </p>
-          <span>MIDDLE EAST</span>
+          <div class="homeHeader">
+            <h1>Isreal and UAE strike historic peace deal</h1>
+            <p class="homeparagraph">
+              Isreal and the UAE agree to normalize relations, marking the third
+              isreal Arab peace deal.
+            </p>
+            <span>MIDDLE EAST</span>
+          </div>
         </article>
-        <article>
-          <img src="./images/canada-US border.jpg" alt="Canada-US border" />
-          <h2>American, go home: Tension at Canada-US border</h2>
-          <span>CANADA</span>
-        </article>
-        <article>
-          <img src="./images/vaccine.jpg" alt="Vaccine" />
-          <h2>How will the world vaccinate seven billion people?</h2>
-          <span>HEALTH</span>
-        </article>
-        <article>
-          <img src="./images/the work gym.jpg" alt="Work Gym" />
-          <h2>The online 'productivity gyms'</h2>
-          <span>WORKLIFE</span>
-        </article>
-        <article>
-          <img src="./images/folks singer.jpg" alt="" />
-          <h2>The folk singer murdered for his music</h2>
-          <span>CULTURE</span>
-        </article>
+        <section class="homeDisplayCard2">
+          <div class="homefloatcard1">
+            <article class="homeDisplay1">
+              <img src="./images/canada-US border.jpg" alt="Canada-US border" />
+              <div id="homeDisplayText">
+                <h2>American, go home: Tension at Canada-US border</h2>
+                <span>CANADA</span>
+              </div>
+            </article>
+            <article class="vaccine">
+              <img src="./images/vaccine.jpg" alt="Vaccine" />
+              <div id="homeDisplayText2">
+                <h2>How will the world vaccinate seven billion people?</h2>
+                <span>HEALTH</span>
+              </div>
+            </article>
+          </div>
+          <div class="homefloatcard2">
+            <article id="workLife">
+              <img src="./images/the work gym.jpg" alt="Work Gym" />
+              <h2>The online 'productivity gyms'</h2>
+              <span>WORKLIFE</span>
+            </article>
+            <article class="culture">
+              <img src="./images/folks singer.jpg" alt="" />
+              <h2>The folk singer murdered for his music</h2>
+              <span>CULTURE</span>
+            </article>
+          </div>
+        </section>
       </div>
     </section>
 
-    <section id="news">
+    <!-- <section id="news">
       <h2>News</h2>
       <div class="bbcNews">
         <article>
