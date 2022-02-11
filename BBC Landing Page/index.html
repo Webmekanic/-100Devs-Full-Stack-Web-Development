@@ -18,17 +18,19 @@
       <nav>
         <img src="./images/bbc-logo-black-and-white.png" alt="BBC" />
         <ul class="navList">
-          <li class="navList">
+          <li class="navListItem" id="signIn">
             <span><i class="fas fa-user"></i></span>Sign In
           </li>
-          <li class="navListItem">Home</li>
-          <li class="navListItem">News</li>
-          <li class="navListItem">Sport</li>
-          <li class="navListItem">Reel</li>
-          <li class="navListItem">Worklife</li>
-          <li class="navListItem">Travel</li>
-          <li class="navListItem">future</li>
-          <li class="navListItem">Culture</li>
+          <li class="navListItem"><a href="#home">Home</a></li>
+          <li class="navListItem"><a href="#home">news</a></li>
+          <li class="navListItem"><a href="#home">sport</a></li>
+
+          <li class="navListItem"><a href="#home">reel</a></li>
+          <li class="navListItem"><a href="#home">Worklife</a></li>
+          <li class="navListItem"><a href="#home">Travel</a></li>
+          <li class="navListItem"><a href="#home">future</a></li>
+          <li class="navListItem"><a href="#home">Culture</a></li>
+
           <li class="navListItem">
             More
             <!-- <span><i class="fas fa-sort-down"></i></span> -->
@@ -42,17 +44,19 @@
     </header>
 
     <section id="home">
-      <h2>Welcome to BBC.com <span>Thursday, 13 August</span></h2>
+      <h2 class="homeDetails">Welcome to BBC.com</h2>
+      <h2 class="homeDetails2">Thursday, 13 August</h2>
+
       <div class="homeDisplay">
         <article class="homeDisplayCard">
           <img src="./images/Isreal & UAE.jpg" alt="Isreal and UAE" srcset="" />
           <div class="homeHeader">
             <h1>Isreal and UAE strike historic peace deal</h1>
-            <p class="homeparagraph">
+            <p class="homeParagraph">
               Isreal and the UAE agree to normalize relations, marking the third
               isreal Arab peace deal.
             </p>
-            <span>MIDDLE EAST</span>
+            <span class="homeParagraph2">MIDDLE EAST</span>
           </div>
         </article>
         <section class="homeDisplayCard2">
@@ -60,7 +64,7 @@
             <article class="homeDisplay1">
               <img src="./images/canada-US border.jpg" alt="Canada-US border" />
               <div id="homeDisplayText">
-                <h2>American, go home: Tension at Canada-US border</h2>
+                <h3 class="">American, go home: Tension at Canada-US border</h3>
                 <span>CANADA</span>
               </div>
             </article>
@@ -75,23 +79,27 @@
           <div class="homefloatcard2">
             <article id="workLife">
               <img src="./images/the work gym.jpg" alt="Work Gym" />
-              <h2>The online 'productivity gyms'</h2>
-              <span>WORKLIFE</span>
+              <div id="homeDisplayText3">
+                <h2>The online 'productivity gyms'</h2>
+                <span>WORKLIFE</span>
+              </div>
             </article>
             <article class="culture">
               <img src="./images/folks singer.jpg" alt="" />
-              <h2>The folk singer murdered for his music</h2>
-              <span>CULTURE</span>
+              <div id="homeDisplayText4">
+                <h2>The folk singer murdered for his music</h2>
+                <span>CULTURE</span>
+              </div>
             </article>
           </div>
         </section>
       </div>
     </section>
 
-    <!-- <section id="news">
+    <section id="news">
       <h2>News</h2>
       <div class="bbcNews">
-        <article>
+        <article id="newCard1">
           <img src="./images/Joe Biden and Harris.jpg" alt="Joe and Harris" />
           <h2>Biden and Harris say Trump has left US 'in tatters'</h2>
           <p>
@@ -100,7 +108,7 @@
           </p>
           <span>US ELECTION 2020</span>
         </article>
-        <article>
+        <article id="newCard2">
           <img src="./images/Belarus election.jpg" alt="Belarus Election" />
           <h2>Women form 'solidarity chains' in Belarus protests</h2>
           <p>
@@ -109,7 +117,7 @@
           </p>
           <span>EUROPE</span>
         </article>
-        <article>
+        <article id="newCard3">
           <img src="./images/trump.jpg" alt="Trump" />
           <h2>Trump says low-pressure shower heads won't wash</h2>
           <p>
@@ -119,6 +127,6 @@
           <span>US & CANADA</span>
         </article>
       </div>
-    </section> -->
+    </section>
   </body>
 </html>
