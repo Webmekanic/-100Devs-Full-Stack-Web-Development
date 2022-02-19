@@ -211,11 +211,11 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4.54rem;
   /* justify-content: space-around; */
-  width: 90%;
+  width: 70%;
   margin: auto;
 }
 .aboutCard {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   align-items: center;
   text-align: center;
 }
@@ -240,18 +240,60 @@ a {
   left: 40px;
 }
 #services {
-  border: 2px solid red;
+  padding: 3.5rem 0 3.5rem 0;
+  /* border: 2px solid red; */
   margin-top: 4rem;
   background-color: rgb(241, 239, 239);
 }
 .servicesArticle {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 70%;
+  margin: auto;
+  grid-gap: 8rem;
+}
+.servicesCard {
+  /* border: 2px solid purple; */
+}
+.serviceHeader {
+  /* border: 3px solid red; */
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+  font-weight: lighter;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+.serviceParagraph {
+  /* border: 2px solid green; */
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.4rem;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+  color: rgb(110, 106, 106);
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+.serviceButton {
+  /* border: 2px solid red; */
+  border: none;
+  padding: 12px 30px;
+  color: white;
+  background: black;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.servicePicture {
+  /* border: 2px solid green; */
+}
+.servicePicture img {
+  width: 100%;
+  height: 100%;
 }
 #team {
   /* border: 2px solid red; */
-  margin-top: 3rem;
+  margin-top: 6.5rem;
+  /* pa */
 }
 .teamArticle {
   /* border: 2px solid green; */
@@ -259,20 +301,24 @@ a {
   /* border: 2px solid blue; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 4.54rem;
+  grid-gap: 3rem;
   /* justify-content: space-around; */
   width: 70%;
   margin: auto;
 }
 .teamImage {
   /* border: 2px solid blue; */
-  height: 320px;
+  height: 370px;
   position: relative;
+  cursor: pointer;
   /* padding-top: 2rem; */
 }
 .teamImage img {
   width: 100%;
   height: 100%;
+}
+.teamImage img:hover {
+  /* transform: scale(1.1); */
 }
 .teamButton {
   position: absolute;
@@ -285,8 +331,21 @@ a {
   transform: translate(-50%);
   display: flex;
   flex-direction: column;
-  /* margin-top: -7rem; */
-  /* padding-top: -15px; */
+  text-align: center;
+  align-items: center;
+  /* margin: 0 20px; */
+}
+.teamName {
+  border: 2px solid green;
+  text-align: center;
+  padding: 0px 60px;
+  text-transform: uppercase;
+  /* margin: 10px 10px; */
+  font-size: 13px;
+}
+.jobRole {
+  border: 2px solid yellow;
+  font-size: 16px;
 }
 #colorDay {
   border: 2px solid yellowgreen;
@@ -294,7 +353,7 @@ a {
 }
 .colorArticle {
   border: 2px solid red;
-  max-width: 90%;
+  max-width: 70%;
   margin: auto;
   height: 50vh;
 }
