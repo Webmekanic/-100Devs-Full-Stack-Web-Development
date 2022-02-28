@@ -307,12 +307,12 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3rem;
   /* justify-content: space-around; */
-  width: 70%;
+  width: 65%;
   margin: auto;
 }
 .teamImage {
   /* border: 2px solid blue; */
-  height: 370px;
+  height: 330px;
   position: relative;
   cursor: pointer;
   /* padding-top: 2rem; */
@@ -335,20 +335,17 @@ a {
   transform: translate(-50%);
   display: flex;
   flex-direction: column;
-  text-align: center;
-  align-items: center;
-  /* margin: 0 20px; */
 }
 .teamName {
-  border: 2px solid green;
-  text-align: center;
-  padding: 0px 60px;
+  /* border: 2px solid green; */
+  /* margin: 0 auto; */
   text-transform: uppercase;
-  /* margin: 10px 10px; */
-  font-size: 13px;
+  margin: 7px 0;
+  /* font-size: 10px;
+  display: block; */
 }
 .jobRole {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   font-size: 16px;
 }
 #colorDay {
@@ -360,6 +357,11 @@ a {
   max-width: 70%;
   margin: auto;
   height: 50vh;
+  /* background-image: url(./) */
+  /* background-image: url(./photos/color\ hair.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
 }
 #lookbook {
   border: 2px solid yellowgreen;

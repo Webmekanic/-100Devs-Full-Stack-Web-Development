@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/temp.css" />
+
+    <title>Temperature Converter</title>
+  </head>
+  <body class="color">
+    <main>
+      <section class="calculateTemp">
+        <h3>enter temperature</h3>
+        <form id="chooseDegree">
+          <label class="tempDegree" for="degree">Degree</label>
+          <br />
+          <input type="text" name="degree" id="degreeInput" />
+          <select id="selectDegree">
+            <option value="">&deg;F</option>
+            <option value="">&deg;C</option>
+          </select>
+        </form>
+
+        <form class="convertTemp">
+          <label class="covertIn" for="degree">Convert In</label> <br />
+          <select name="" id="selectTemp">
+            <option value="">Fahrenheit (&deg;F)</option>
+            <option value="">Celsius (&deg;C)</option>
+          </select>
+          <button>Convert</button>
+        </form>
+      </section>
+      <section class="answer">
+        <div>
+          <h1>34</h1>
+          <p>&deg;F</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
