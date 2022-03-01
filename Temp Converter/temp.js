@@ -16,21 +16,36 @@
 // else through error message
 
 class Temp {
-  constructor(tempValue, degFahr, degCels) {
+  constructor(tempValue, selectDegree, selectTemp) {
     this.tempValue = tempValue
-    this.degree = degree
-    this.convertIn = convertIn
+    this.selectDegree = selectDegree
+    this.selectTemp = selectTemp
   }
 }
-class Answer {}
+class Answer {
+  convertToCelsius(temp) {
+    const tempAnswer = document.getElementById("tempAnswer")
+    const degreeIcon = document.getElementById("degreeIcon")
+    let fahrCalc = Number(9 / 5 + 32)
+    tempAnswer.innerHTML = parseInt(temp.tempValue) * fahrCalc
+  }
+}
 
 // Event listeners
 document.getElementById("convert").addEventListener("click", (e) => {
-  const tempValue = document.getElementById("degreeInput").value,
-    degFahr = document.getElementById("degFahr").value,
-    degCels = document.getElementById("degCels").value,
-    tFahr = document.getElementById("tFahr").value
+  const tempValue = Number(document.getElementById("degreeInput").value),
+    selectDegree = document.getElementById("selectDegree"),
+    selectTemp = document.getElementById("selectTemp")
 
-  // console.log(degCels)
+  const temp = new Temp(tempValue, selectDegree, selectTemp)
+
+  const answer = new Answer()
+
+  if (selectDegree.value === "Fahrenheit" && selectTemp.value === "Celsius") {
+    answer.convertToCelsius(temp)
+  } else {
+    console.log("error")
+  }
+
   e.preventDefault()
 })
