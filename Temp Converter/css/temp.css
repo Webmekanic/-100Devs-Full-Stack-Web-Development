@@ -48,10 +48,9 @@ h3 {
 #degreeInput {
   /* border: 2px solid red; */
   width: 80%;
-  padding: 7px;
+  padding: 8px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  /* border-radius: 4px; */
   margin-top: 1rem;
   outline: none;
   border: 1px solid var(--button-color);
@@ -67,8 +66,14 @@ h3 {
   border-bottom-right-radius: 5px;
   color: var(--answer-color);
 }
+option {
+  /* background-color: var(--answer-color); */
+  /* color: var(--calculate-color); */
+  /* appearance: none; */
+}
+
 .answer {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   background-color: var(--answer-color);
   color: var(--calculate-color);
 }
@@ -90,10 +95,39 @@ h3 {
   color: var(--answer-color);
 }
 button {
-  border: 2px solid red;
+  border: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: 25px;
+  text-transform: capitalize;
   background-image: linear-gradient(
     to right,
     var(--answer-color),
     var(--button-color)
   );
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto;
+}
+.calcAnswer {
+  /* border: 2px solid red; */
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 40%;
+}
+
+.tempIcon {
+  /* border: 2px solid yellowgreen; */
+  position: relative;
+}
+h1 {
+  font-size: 38px;
+  position: relative;
+}
+#degreeIcon {
+  font-size: 20px;
+  position: absolute;
+  color: var(--calculate-color);
 }
