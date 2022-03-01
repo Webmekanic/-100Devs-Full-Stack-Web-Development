@@ -23,11 +23,13 @@ class Temp {
   }
 }
 class Answer {
-  convertToCelsius(temp) {
+  convertToFahrenheit(temp) {
     const tempAnswer = document.getElementById("tempAnswer")
     const degreeIcon = document.getElementById("degreeIcon")
     let fahrCalc = Number(9 / 5 + 32)
-    tempAnswer.innerHTML = parseInt(temp.tempValue) * fahrCalc
+    tempAnswer.innerHTML = parseFloat(
+      parseInt(temp.tempValue) * fahrCalc
+    ).toFixed(0)
   }
 }
 
@@ -41,11 +43,8 @@ document.getElementById("convert").addEventListener("click", (e) => {
 
   const answer = new Answer()
 
-  if (selectDegree.value === "Fahrenheit" && selectTemp.value === "Celsius") {
-    answer.convertToCelsius(temp)
-  } else {
-    console.log("error")
+  if (selectDegree.value === "Celsius" && selectTemp.value === "Fahrenheit") {
+    answer.convertToFahrenheit(temp)
   }
-
   e.preventDefault()
 })
